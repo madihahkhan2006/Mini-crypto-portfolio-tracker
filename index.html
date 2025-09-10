@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mini Portfolio Tracker</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+  <script defer src="script.js"></script>
+</head>
+<body>
+  <div class="tracker-container">
+    <h1>Mini Crypto Portfolio Tracker</h1>
+
+    <div class="inputs">
+      <input list="cryptoList" id="symbolInput" placeholder="Enter symbol (e.g. BTC)">
+      <input type="number" id="amountInput" placeholder="Amount" step="0.0001">
+      <button id="addAssetBtn">Add Asset</button>
+      <select id="currencySelect">
+        <option value="gbp" selected>GBP</option>
+        <option value="usd">USD</option>
+      </select>
+      <button id="toggleHistoryBtn">Show Historical Performance</button>
+      <div class="chart-container" id="historyContainer" style="display:none;">
+        <label for="historyRange">Range:</label>
+        <select id="historyRange">
+            <option value="10">Last 10 days (every 2 days)</option>
+            <option value="30">Last 30 days (every 2 days)</option>
+            <option value="90">Last 90 days (every 15 days)</option>
+            <option value="180">Last 6 months (monthly)</option>
+            <option value="365">Last year (monthly)</option>
+        </select>
+        <canvas id="historyChart"></canvas>
+      </div>
+      
+      <datalist id="cryptoList">
+        <option value="BTC">Bitcoin</option>
+        <option value="ETH">Ethereum</option>
+        <option value="SOL">Solana</option>
+        <option value="DOGE">Dogecoin</option>
+        <option value="XRP">Ripple</option>
+        <option value="ADA">Cardano</option>
+        <option value="DOT">Polkadot</option>
+        <option value="LTC">Litecoin</option>
+        <option value="BNB">Binance Coin</option>
+        <option value="AVAX">Avalanche</option>
+      </datalist>
+    </div>
+
+    
+
+    <div id="portfolio"></div>
+    <h2 id="totalValue"></h2>
+
+    <div class="chart-container">
+      <canvas id="portfolioChart" width="400" height="400"></canvas>
+    </div>
+  </div>
+</body>
+</html>

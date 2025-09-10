@@ -1,0 +1,112 @@
+
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap');
+
+body {
+  font-family: "Poppins", sans-serif;
+  background: #f0f2f5;
+  margin: 0;
+  padding: 0;
+}
+
+.tracker-container {
+  max-width: 700px;
+  margin: 40px auto;
+  background: #fff;
+  padding: 20px;
+  border-radius: 12px;
+  box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+}
+
+h1 {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.inputs {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin-bottom: 20px;
+  align-items: center;
+}
+
+.inputs input, .inputs select {
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  font-family: "Poppins", sans-serif;
+}
+
+.inputs button {
+  font-family: "Poppins", sans-serif;
+  font-weight: 600;
+  padding: 10px 20px;
+  border: none;
+  background: #E66386;
+  color: white;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background 0.2s;
+}
+
+.inputs button:hover {
+  background: #c03d63;
+}
+
+#portfolio {
+  margin-bottom: 20px;
+}
+
+.asset {
+  padding: 8px;
+  border-bottom: 1px solid #eee;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.asset input {
+  width: 80px;
+  padding: 4px;
+}
+
+.asset button {
+  background: #f8e0e0;
+  color: #fff;
+  border: none;
+  padding: 4px 8px;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background 0.2s;
+}
+
+.asset button:hover {
+  background: #c03d63;
+}
+
+#totalValue {
+  text-align: center;
+  margin-top: 10px;
+  font-size: 1.2em;
+}
+
+.chart-container {
+  width: 100%;
+  max-width: 400px;
+  margin: 20px auto;
+}
+
+#portfolioChart {
+  display: block;
+  width: 100% !important;
+  height: auto !important;
+}
+
+.asset img {
+    width: 24px;
+    height: 24px;
+    vertical-align: middle;
+    margin-right: 6px;
+}
