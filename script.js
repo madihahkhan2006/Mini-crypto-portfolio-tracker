@@ -58,7 +58,7 @@ document.addEventListener("DOMContentLoaded", () => {
     if (!id) return null;
     try {
       const res = await fetch(
-        `https://api.coingecko.com/api/v3/simple/price?ids=${id}&vs_currencies=${selectedCurrency}`
+        // insert own coingecko api in the format "https://api.coingecko.com/api/............${id}........${selectedCurrency}" here
       );
       const data = await res.json();
       if (!data[id] || data[id][selectedCurrency] === undefined) return null;
